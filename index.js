@@ -18,7 +18,7 @@ module.exports=function(path,fun){
     module.exports.func=fun||module.exports.func
     if(path[path.length-1]=="/"){
         path=path.substr(0,path.length-1)
-        console.log(path)
+
     }
     walk(path)
     return  module.exports.arr
